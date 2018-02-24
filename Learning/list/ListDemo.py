@@ -1,25 +1,18 @@
 #coding:gbk
 '''
-函数部分  计算两个列表数据之和
+函数部分 缺省赋值 以及缺省函数的作用
 '''
 
-'''创建函数'''
-def test ():
-    print("hello world")
-    
-list1 = [12,23,8,9]
-list2 = [6,2,3]
 
-def test1(a,b):
-    sum1 = 0
-    for i in a:
-        sum1 = sum1 + i
-    
-    sum2 = 0
-    for i in b:
-        sum2 = sum2 + i
-    
-    return sum1+sum2
+'''
+def 函数名（参数）:
+         代码组 
+创建缺省函数'''
+def abc(a,b = 3):
+    return a+b
 
-n = test1(list1, list2)
+n = abc(6,2)
+print(n)
+
+n = abc(1,2)
 print(n)

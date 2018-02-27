@@ -1,16 +1,17 @@
 '''
 
-字典  键-值对
+文件的读和写    for循环里面的readline只打印某一行？
 
 '''
-#创建一个字典
-data1 = {}
-data2 = dict()
+import os
+'''打开文件所在目录'''
+os.chdir("D:\\")
+''' 找到具体 “文件名.后缀 ”'''
+data = open("ss.txt","a")
 
-#往字典里设置 “键值对”
-data1["MyName"] = "Jack"
-data1["Gerder"] = "male"
-data1["age"]    = 18
-data1["hobby"] = ["football","baseball","drawing"]
-
-print(data1)
+''' 删除原有数据写入新数据'''
+print("/\nss",file = data)
+''' 增加新数据'''
+data.write("胜多负少单方事故")
+'''关闭文件'''
+data.close()

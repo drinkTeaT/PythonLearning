@@ -1,77 +1,16 @@
-'''
+''' 实现在两个列表中拿出相同位置的值'''
+from scr import method
+fruit = dict()
+fruit["Apple"] = 5
+fruit["Watermelon"] = 2
+fruit["Orange"] = 4
+fruit["Pear"] = 4
 
-基础知识  变量，常量，数据类型，函数返回值
-变量是可以被重复赋值的，而且是名字是自定义的
-常量不准被赋值
-数据类型 常见的有 整数  int,小数 float ，列表 list ，字符串 str，字典 dict，集合 set等等  检测数据类型 用 type(参数)
-'''
-a = 45
-a = 8979.36
-b = "var"
+freshfruit = [8,2,12,6,23,123,4,2,43,54,65,7,3,4]
+weight = [10,30,15,12,23,123,4,2,43,54,65,7,3,4]
 
-c = []
-
-d = {}
-d = dict()
-
-e = set()
-
-type(e)
-
-''' 函数返回值'''
-#定义一个  无参，没有返回值的函数
-def cetaphil():
-    for i in c:
-        print(i)
-        
-#调用 函数
-cetaphil()
-
-#定义一个 有参，有返回值的函数 
-#传递两个数据到该函数，并返回一个包含这两个数据的列表数据类型
-def pen(b,aa=1):
-    c = [1,2,3]    
-    c.append(b)
-    c.append(aa)
-    return c
-#调用函数
-pen(1,2)
-
-''' 给定一个列表，里面包含小数，整数。得出他的平均数 用有返回值函数实现'''
-data = [1,6,1.34,2,3,4,5.14]
-def avg(a):
-    d = 0
-    for i in a:
-        d = d + i
-    f = d/len(data)
-    return f
-
-print(avg(data))   # a = data
-
-''' 给定一个列表，里面包含小数，整数。在函数内部打印出他的平均数 用无返回值函数实现'''
-
-def soft(a):
-    b = 0
-    for i in a:
-        b = b + i
-    h = b/len(a)
-    print(h)
-
-data = [1,6,1.34,2,3,4,5.14]
-soft(data)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+''' 计算今天的毛收入'''
+for i in range(freshfruit.__len__()):
+    print(i)
+    
+print(method.newIncome(freshfruit, weight))

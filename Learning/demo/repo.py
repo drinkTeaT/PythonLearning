@@ -1,5 +1,5 @@
 ''' 实现在两个列表中拿出相同位置的值'''
-from scr import method
+from Learning.scr import method
 fruit = dict()
 fruit["Apple"] = 5
 fruit["Watermelon"] = 2
